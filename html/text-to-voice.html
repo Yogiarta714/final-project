@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/text-to-voice.css" />
+    <title>Text To Speech</title>
+    <script src="https://unpkg.com/feather-icons"></script>
+  </head>
+  <body>
+    <section id="header">
+      <a href="" class="gambar"><img src="../img/logo.png" alt="Logo" /></a>
+      <div>
+        <ul id="navbar">
+          <li>
+            <a href="main.html">Beranda</a>
+          </li>
+          <li><a class="active" href="main.html#product1">Menu</a></li>
+          <li><a href="about.html">Tentang Kami</a></li>
+          <li><a href="contact.html">Kontak</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <div class="hero">
+      <h1>Text To Speech <span>Converter</span></h1>
+      <textarea placeholder="Write anything here..."></textarea>
+      <div class="row">
+        <select id="dropdown"></select>
+        <button><img src="../img/textVoice/play.png" />Listen</button>
+      </div>
+    </div>
+    <script src="../js/text-to-voice.js"></script>
+
+    <script>
+      feather.replace();
+    </script>
+  </body>
+</html>

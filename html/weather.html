@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/weather.css" />
+    <title>Weather App</title>
+  </head>
+
+  <body>
+    <!-- Header -->
+    <section id="header">
+      <a href="main.html" class="gambar"
+        ><img src="../img/logo.png" alt="Logo"
+      /></a>
+      <div>
+        <ul id="navbar">
+          <li>
+            <a href="main.html">Beranda</a>
+          </li>
+          <li><a class="active" href="main.html#product1">Menu</a></li>
+          <li><a href="about.html">Tentang Kami</a></li>
+          <li><a href="contact.html">Kontak</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <div class="container">
+      <form class="weatherForm">
+        <input type="text" class="cityInput" placeholder="Enter City" />
+        <button type="submit">Get Weather</button>
+      </form>
+
+      <div class="card" style="display: none"></div>
+    </div>
+    <script src="../js/weather.js"></script>
+  </body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hangman Game Javascript</title>
+    <link rel="stylesheet" href="../css/hangman.css" />
+  </head>
+  <body>
+    <section id="header">
+      <a href="" class="gambar"><img src="../img/logo.png" alt="Logo" /></a>
+      <div>
+        <ul id="navbar">
+          <li>
+            <a href="main.html">Beranda</a>
+          </li>
+          <li><a class="active" href="main.html#product1">Menu</a></li>
+          <li><a href="about.html">Tentang Kami</a></li>
+          <li><a href="contact.html">Kontak</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <div class="hangmanBody">
+      <div class="game-modal">
+        <div class="content">
+          <img src="../img/hangman/lost.gif" alt="gif" />
+          <h4>Game Over</h4>
+          <p>The correct word was: <b>rainbow</b></p>
+          <button class="play-again">Play Again</button>
+        </div>
+      </div>
+      <div class="container">
+        <div class="hangman-box">
+          <img src="../img/hangman/hangman-0.svg" alt="hangman-img" />
+          <h1>Hangman Game</h1>
+        </div>
+        <div class="game-box">
+          <ul class="word-display"></ul>
+          <h4 class="hint-text">
+            Hint:
+            <b>Lorem ipsum dolor sit amet consectetur adipisicing elit.</b>
+          </h4>
+          <h4 class="guesses-text">
+            Tebakan Salah:
+            <b>0 / 6</b>
+          </h4>
+          <div class="keyboard"></div>
+        </div>
+      </div>
+    </div>
+    <script src="../js/hangmanWordList.js"></script>
+    <script src="../js/hangman.js"></script>
+  </body>
+</html>
