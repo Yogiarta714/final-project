@@ -49,11 +49,28 @@ body {
   text-decoration: none;
   color: #000000;
   font-size: 16px;
-  transition: 0.3s ease;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.menu li a::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -5px;
+  height: 2px;
+  width: 0;
+  background: #0384ec;
+  transform: translateX(-50%);
+  transition: width 0.3s ease;
 }
 
 .menu li a:hover {
   color: #0384ec;
+}
+
+.menu li a:hover::after {
+  width: 100%;
 }
 
 .search-login {
