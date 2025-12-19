@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tambah Berita - DeNews</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Sidebar -->
+    <nav class="sidebar">
+        <div class="brand">
+            <span class="brand-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M19 3H5C3.89543 3 3 3.89543 3 5V19C3 20.1046 3.89543 21 5 21H19C20.1046 21 21 20.1046 21 19V5C21 3.89543 20.1046 3 19 3Z"
+                        stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M7 7H17" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M7 12H17" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M7 17H13" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </span>
+            DeNews
+        </div>
+        <ul class="nav-menu">
+            <li class="nav-item">
+                <a href="index.html" class="nav-link">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                        <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                    </svg>
+                    Dashboard
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="management.html" class="nav-link active">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                        <line x1="3" y1="9" x2="21" y2="9"></line>
+                        <line x1="9" y1="21" x2="9" y2="9"></line>
+                    </svg>
+                    Manajemen Berita
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <a href="management.html" class="back-link">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                <polyline points="15 18 9 12 15 6"></polyline>
+            </svg>
+            Kembali
+        </a>
+
+        <div class="form-card">
+            <h3>Detail Berita</h3>
+            <br>
+
+            <div class="form-group">
+                <label class="form-label">Judul</label>
+                <input type="text" class="form-control" value="Harga BTC Naik Menjadi 160k">
+            </div>
+
+            <div class="form-group">
+                <label class="form-label">Nama Author</label>
+                <input type="text" class="form-control" value="Yogi">
+            </div>
+
+            <div class="form-group">
+                <label class="form-label">Kategori</label>
+                <select class="form-control">
+                    <option>Ekonomi</option>
+                    <option>Hiburan</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label class="form-label">Gambar thumbnail</label>
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Unggah gambar thumbnail" readonly>
+                    <button class="input-group-btn">Upload</button>
+                </div>
+            </div>
+
+            <h4>Kontent Berita</h4>
+            <br>
+
+            <div class="form-group">
+                <label class="form-label">Paragraf 1</label>
+                <input type="text" class="form-control"
+                    value="lorem bbsxjxbnksjwiohdjwnxkwqudbxuqwxjbdquiegdbuqewdbqkdbqd">
+            </div>
+
+            <div class="form-group">
+                <label class="form-label">Gambar 2</label>
+                <div style="display: flex; gap: 10px; align-items: start;">
+                    <div style="flex: 1;">
+                        <div class="input-group" style="margin-bottom: 5px;">
+                            <input type="text" class="form-control" placeholder="Unggah gambar" readonly>
+                            <button class="input-group-btn">Upload</button>
+                        </div>
+                        <input type="text" class="form-control" placeholder="Keterangan gambar">
+                    </div>
+                    <button class="btn-icon text-red" style="margin-top: 5px;">🗑️</button>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="form-label">Vidio 3</label>
+                <div style="display: flex; gap: 10px; align-items: start;">
+                    <div style="flex: 1;">
+                        <div class="input-group" style="margin-bottom: 5px;">
+                            <input type="text" class="form-control" placeholder="Unggah Vidio" readonly>
+                            <button class="input-group-btn">Upload</button>
+                        </div>
+                        <input type="text" class="form-control" placeholder="Keterangan vidio">
+                    </div>
+                    <button class="btn-icon text-red" style="margin-top: 5px;">🗑️</button>
+                </div>
+            </div>
+
+            <div class="dashed-area">
+                +
+            </div>
+
+            <div class="form-actions">
+                <button class="btn btn-outline" style="border-color: #007bff; color: #333;">Batal</button>
+                <button class="btn btn-primary">Simpan</button>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
